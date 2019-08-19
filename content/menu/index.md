@@ -5,7 +5,8 @@ headless: true
 - [**Introduction**]({{< relref "/" >}})
 - [App]({{< relref "/docs/app.md" >}})
 - **Guides**
-  - [Flask]({{< relref "/docs/flask.md" >}})
-  - [Django]({{< relref "/docs/django.md" >}})
-  - [Passport]({{< relref "/docs/passport.md" >}})
+  - [Frontend-JS]({{< relref "/docs/frontend-js.md" >}})
+  - [Flask (Python)]({{< relref "/docs/flask.md" >}})
+  - [Passport (Node.js)]({{< relref "/docs/passport.md" >}})
+
 
