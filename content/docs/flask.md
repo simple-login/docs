@@ -37,7 +37,7 @@ os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
 ## Login endpoint
 
-When user clicks on **Login with SimpleLogin**, user gets redirected to the SimpleLogin authorization page. This is done using the `/login` endpoint. The `state` is necessary to defend against [CSFR attack](https://www.shellvoide.com/hacks/cross-site-request-forgery-attack-on-oauth2-protocol/).
+When user clicks on **Login with SimpleLogin**, user gets redirected to the SimpleLogin authorization page. This is done using the `/login` endpoint. The `state` is necessary to defend against [CSRF attack](https://www.shellvoide.com/hacks/cross-site-request-forgery-attack-on-oauth2-protocol/).
 
 {{< highlight python "linenos=table,hl_lines=11-13 16" >}}
 import requests_oauthlib, os, flask
@@ -88,4 +88,14 @@ def callback():
     """
 {{< / highlight >}}
 
+
+## Run the App and enjoy!
+
+Let's run the app
+
+```bash
+flask run
+```
+
+Now you should be able to login with SimpleLogin at http://localhost:5000/login
 
