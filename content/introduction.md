@@ -1,6 +1,7 @@
 ---
 title: Introduction
 type: docs
+url: "/"
 ---
 
 # SimpleLogin Docs
