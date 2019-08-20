@@ -39,7 +39,7 @@ os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
 When user clicks on **Login with SimpleLogin**, user gets redirected to the SimpleLogin authorization page. This is done using the `/login` endpoint. The `state` is necessary to defend against [CSRF attack](https://www.shellvoide.com/hacks/cross-site-request-forgery-attack-on-oauth2-protocol/).
 
-{{< highlight python "linenos=table,hl_lines=11-13 16" >}}
+```python
 import requests_oauthlib, os, flask
 
 @app.route("/login")
@@ -58,13 +58,13 @@ def login():
     flask.session["oauth_state"] = state
 
     return flask.redirect(redirect_url)
-{{< / highlight >}}
+```
 
 ## Callback endpoint
 
 When user approves sharing data with your app, they get redirected back to the `redirect_uri` in the previous step. This route is handled by an endpoint that receives the `code` and exchanges for `access token`. The `access token` is then used to exchange for user info:
 
-{{< highlight python "linenos=table,hl_lines=7-11 13" >}}
+```python
 @app.route("/callback")
 def callback():
     sl = requests_oauthlib.OAuth2Session(
@@ -86,8 +86,7 @@ def callback():
     Your email is {user_info["email"]} <br>
     And your avatar: <img src="{user_info['avatar_url']}">
     """
-{{< / highlight >}}
-
+```
 
 ## Run the App and enjoy!
 

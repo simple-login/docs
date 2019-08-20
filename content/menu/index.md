@@ -2,7 +2,7 @@
 headless: true
 ---
 
-- [Introduction]({{< relref "/introduction.md" >}})
+- [Introduction]({{< relref "/" >}})
 - [App]({{< relref "/docs/app.md" >}})
 - *Guides*
   - [Frontend-JS]({{< relref "/docs/frontend-js.md" >}})

@@ -16,7 +16,7 @@ Let's start by a quick example using SimpleLogin SDK.
 
 a. Create a `index.html` file that has a "Login with SimpleLogin" button
 
-{{< highlight html "linenos=table,hl_lines=8 12 17" >}}
+```html
 <button id="btn-simplelogin">
     Login with SimpleLogin
 </button>
@@ -44,7 +44,7 @@ document.getElementById("btn-simplelogin").onclick = function(e) {
   })
 }
 </script>
-{{< / highlight >}}
+```
 
 b. Run a local server, you can use any static server:
 
