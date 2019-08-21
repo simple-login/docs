@@ -1,7 +1,6 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/example
 
-# todo: change url to docs.simplelogin.io
-baseURL = 'https://new-docs.simplelogin.io/'
+baseURL = 'https://docs.simplelogin.io/'
 title = 'SimpleLogin'
 theme = 'book'
 disableKinds = ['taxonomy', 'taxonomyTerm']
