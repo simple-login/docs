@@ -68,9 +68,9 @@ The next section presents quickly about OAuth2 and what `flow` should be used. I
 
 From the user point of view, the login experience is consisted of 2 steps:
 
-1. user clicks on **Login with SimpleLogin** button, gets redirected to SimpleLogin authorization page.
+1. User clicks on **Login with SimpleLogin** button, gets redirected to SimpleLogin authorization page. User will be asked if they want to share their information with your app/website.
 
-2. user authorizes your application, gets redirected back to your application and is authenticated. User can now have access to content restricted to authenticated user in your application.
+2. User accepts, gets redirected back to your application and is authenticated. User can now have access to content restricted to authenticated user in your application.
 
 ![](/images/user-flow.png)
 

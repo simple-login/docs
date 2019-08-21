@@ -43,7 +43,7 @@ It's impossible to cover all Social Login libraries for all languages. As Simple
 
 Please find in the **Guides** section dedicated guide for some frameworks/languages.
 
-
+If you don’t want to use a library that supports OAuth/OpenID Connect, this can work too! Please head to [Code Flow - The raw way]({{< relref "/docs/code-flow.md" >}}) for implementing the `Code Flow` the **raw** way! The raw way for `Implicit Flow` is coming soon!
 
 
 
