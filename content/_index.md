@@ -6,7 +6,11 @@ url: "/"
 
 # SimpleLogin Docs
 
-Welcome! Here you'll find handy documentation about SimpleLogin SDKs and libraries.
+Welcome to SimpleLogin, the most developer-friendly social login solution!
+
+Built by developers who are frustrated with the confusing and unnecessarily complicated experiences provided by giants such as Google, Facebook, Twitter, etc , SimpleLogin strikes to have the best experiences for developers. And of course, protect user privacy at the same time. For more information, please consult our website at https://simplelogin.io
+
+Here you'll find handy documentation about how to add the **Login with SimpleLogin** button to your app or website using either SimpleLogin SDKs or libraries.
 
 If you think there is something missing, please <a href="mailto:hi@simplelogin.io">let us know!</a>
 
