@@ -1,4 +1,4 @@
-# App 
+# App
 
 ## What is a SimpleLogin App?
 
@@ -6,7 +6,7 @@ A SimpleLogin App represents an **user database**. For ex, if you have iOS, Andr
 
 ## Create an App
 
-Please head to https://app.simplelogin.io/developer/ and click on **Create new app** to create a new app. You only need to provide a name. 
+Please head to https://app.simplelogin.io/developer/ and click on **Create new app** to create a new app. You only need to provide a name.
 
 ![](/images/dev1.png)
 
@@ -43,7 +43,12 @@ It's impossible to cover all Social Login libraries for all languages. As Simple
 
 Please find in the **Guides** section dedicated guide for some frameworks/languages.
 
-If you don’t want to use a library that supports OAuth/OpenID Connect, this can work too! Please head to [Code Flow - The raw way]({{< relref "/docs/code-flow.md" >}}) for implementing the `Code Flow` the **raw** way! The raw way for `Implicit Flow` is coming soon!
+If you don’t want to use a library that supports OAuth/OpenID Connect, this can work too! Please head to
+
+- [Code Flow - The raw way]({{< relref "/docs/code-flow.md" >}}) for implementing the `Code Flow`
+- [Implicit Flow - The raw way]({{< relref "/docs/implicit-flow.md" >}}) for implementing the `Implicit Flow`
+
+the **raw** way!
 
 
 

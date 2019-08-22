@@ -29,7 +29,7 @@ Let's jump into each endpoint.
 
 This endpoint handles user clicking on **Login with SimpleLogin** button (e.g. `<a href="https://your-app/login">Login with SimpleLogin</a>`) and redirects user to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
 
-```
+```text
 https://app.simplelogin.io/oauth2/authorize
     ?response_type=code
     &client_id=CLIENT_ID
@@ -50,7 +50,7 @@ Let's split this long url down to components:
 
 Upon user approval, they will be redirected to this below url. Line breaks are also added here for visibility only, please remove them in your code.
 
-```
+```text
 REDIRECT_URI
     ?code=CODE
     &state=STATE

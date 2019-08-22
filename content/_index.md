@@ -74,6 +74,13 @@ From the user point of view, the login experience is consisted of 2 steps:
 
 ![](/images/user-flow.png)
 
+## User Info
+
+Using SimpleLogin you will get the following information from user:
+
+- `email`: either user's personal email address or an email alias user creates on SimpleLogin. All emails sent an alias will be forwarded to user personal email so you can safely use this email to send important information to users. And please make sure to not spam users 😉.
+- `name`: usually has the format `first last` but this is not guaranteed.
+- `avatar_url` (optional): only if user has uploaded their profile picture. Please note that this url is only **temporary** and will be expired in 1 week. We recommend downloading and storing the avatar. You can also just ask user to re-login in less than a week but this is less ideal.
 
 ## Flow
 

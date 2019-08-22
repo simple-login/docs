@@ -10,4 +10,5 @@ headless: true
   - [Passport (Node.js)]({{< relref "/docs/passport.md" >}})
 
 - [Code Flow - the raw way]({{< relref "/docs/code-flow.md" >}})
+- [Implicit Flow - the raw way]({{< relref "/docs/implicit-flow.md" >}})
 
