@@ -48,8 +48,6 @@ If you don’t want to use a library that supports OAuth/OpenID Connect, this ca
 - [Code Flow - The raw way]({{< relref "/docs/code-flow.md" >}}) for implementing the `Code Flow`
 - [Implicit Flow - The raw way]({{< relref "/docs/implicit-flow.md" >}}) for implementing the `Implicit Flow`
 
-the **raw** way!
-
 
 
 
