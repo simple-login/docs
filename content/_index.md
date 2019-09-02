@@ -54,9 +54,9 @@ b. Run a local server, you can use any static server, for example Python `http.s
 
 > python3 -m http.server
 
-or NodeJS `static-server` tool, can be installed via `npm -g install static-server`
+or NodeJS `http-server` module
 
-> static-server -p 8000
+> npx http-server -p 8000
 
 c. Visit http://localhost:8000, you should now be able to login via SimpleLogin!
 
