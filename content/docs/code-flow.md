@@ -57,6 +57,7 @@ REDIRECT_URI
 ```
 
 Let's break the components down:
+
 - `REDIRECT_URI` the same `REDIRECT_URI` in the login endpoint
 - `STATE`: the state generated in the login endpoint. It's your app's responsibility to compare this `STATE` to the one generated in previous step, typically by retrieving it from the cookie.
 - `CODE`: used to exchange for the `access token` in a POST request to SimpleLogin:
