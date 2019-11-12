@@ -26,6 +26,8 @@ This is the most important field in your app! By default SimpleLogin **whitelist
 
 ![](/images/redirect-uri.png)
 
+When some errors happen during the authorization flow, SimpleLogin redirects user back to `redirect_uri?error={error_code}` so your app can act accordingly. Please find the list of all errors on [Error Codes]({{< relref "/docs/errors.md" >}}).
+
 ## Libraries/Framework
 
 SimpleLogin has added support for SimpleLogin in the following popular libraries and more are coming:

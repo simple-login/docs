@@ -11,4 +11,5 @@ headless: true
 
 - [Code Flow - the raw way]({{< relref "/docs/code-flow.md" >}})
 - [Implicit Flow - the raw way]({{< relref "/docs/implicit-flow.md" >}})
+- [Error Codes]({{< relref "/docs/errors.md" >}})
 
