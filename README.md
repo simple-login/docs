@@ -1,6 +1,6 @@
 To deploy:
 
-> hugo && now -n public --prod public
+> hugo && vercel -n public --prod public
 
 To dev locally
 
