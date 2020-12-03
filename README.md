@@ -1,10 +1,20 @@
+To get hugo theme
+
+```bash
+git submodule update --init --recursive
+```
+
 To deploy:
 
-> hugo && vercel --prod public
+```bash
+hugo && vercel --prod
+```
 
 To dev locally
 
-> hugo server
+```bash
+hugo server
+```
 
 Then open http://localhost:1313
 
