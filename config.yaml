@@ -3,6 +3,13 @@ baseURL: https://docs.simplelogin.io/
 title: "SIWSL (Sign in with SimpleLogin)"
 theme: book
 
+enableRobotsTXT: true
+canonifyURLs: true
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+
+
 # Book configuration
 disablePathToLower: true
 enableGitInfo: true
