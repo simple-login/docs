@@ -19,7 +19,7 @@ enableGitInfo: true
 pygmentsCodeFences: true
 
 params:
-  description: Protect your users info with SimpleLogin.
+  description: Protect your users with SimpleLogin.
   images:
     - https://simplelogin.io/open-graph.png
 
