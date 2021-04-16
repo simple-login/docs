@@ -1,0 +1,45 @@
+---
+baseURL: https://docs.simplelogin.io/
+title: "SIWSL (Sign in with SimpleLogin)"
+theme: book
+
+# Book configuration
+disablePathToLower: true
+enableGitInfo: true
+
+# Code highlight
+# pygmentsStyle: "monokailight"
+pygmentsCodeFences: true
+
+params:
+  description: Protect your users info with SimpleLogin.
+  images:
+    - https://simplelogin.io/open-graph.png
+
+  BookToC: 3
+
+  # (Optional, default none) Set leaf bundle to render as side menu
+  # When not specified file structure and weights will be used
+  BookMenuBundle: "/menu"
+
+  # (Optional, default docs) Specify section of content to render as menu
+  # You can also set value to '*' to render all sections to menu
+  BookSection: 'docs'
+
+  # Set source repository location.
+  # Used for 'Last Modified' and 'Edit this page' links.
+  BookRepo: 'https://github.com/simple-login/docs'
+
+  # Enable "Edit this page" links for 'doc' page type.
+  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
+  # Path must point to 'content' directory of repo.
+  BookEditPath: 'edit/master/content'
+
+  # Configure the date format used on the pages
+  # - In git information
+  # - In blog posts
+  BookDateFormat: 'Jan 2, 2006'
+
+  # (Optional, default true) Enables search function with lunr.js,
+  # Index is built on fly, therefore it might slowdown your website.
+  BookSearch: true
