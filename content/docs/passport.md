@@ -76,7 +76,7 @@ passport.use('SimpleLogin', new OidcStrategy({
 
 ## Login endpoint
 
-When user clicks on **Login with SimpleLogin**, user gets redirected to the SimpleLogin authorization page. This is done using the `/login` endpoint. The nice thing about passport and its OpenID Connect strategy is it also takes care of generating a random `state` in the redirection URL. The `state` is necessary to defend against [CSRF attack](https://www.shellvoide.com/hacks/cross-site-request-forgery-attack-on-oauth2-protocol/).
+When user clicks on **Sign in with SimpleLogin**, user gets redirected to the SimpleLogin authorization page. This is done using the `/login` endpoint. The nice thing about passport and its OpenID Connect strategy is it also takes care of generating a random `state` in the redirection URL. The `state` is necessary to defend against [CSRF attack](https://www.shellvoide.com/hacks/cross-site-request-forgery-attack-on-oauth2-protocol/).
 
 ```js
 // redirect user to authorization page
@@ -118,7 +118,7 @@ And run the app
 node app.js
 ```
 
-Now you should be able to login with SimpleLogin at http://localhost:3000/login
+Now you should be able to sign in with SimpleLogin at http://localhost:3000/login
 
 
 

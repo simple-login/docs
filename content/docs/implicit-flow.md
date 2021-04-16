@@ -18,7 +18,7 @@ Let's jump into each part.
 
 ## Login part
 
-This part handles user clicking on **Login with SimpleLogin** button (e.g. `<button>Login with SimpleLogin</button>`) and redirects user to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
+This part handles user clicking on **Sign in with SimpleLogin** button (e.g. `<button>Login with SimpleLogin</button>`) and redirects user to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
 
 ```text
 https://app.simplelogin.io/oauth2/authorize
@@ -98,7 +98,7 @@ or by NodeJS `static-server` tool, can be installed via `npm -g install static-s
 > static-server -p 8000
 
 ```html
-<button onclick="simpleLogin()">Login with SimpleLogin</button>
+<button onclick="simpleLogin()">Sign in with SimpleLogin</button>
 
 <script>
     function simpleLogin() {
@@ -163,7 +163,7 @@ You might notice that when clicking on **Login with Facebook/Google** button, a 
 
 This can be done quite easily using SimpleLogin SDK JS (see [Frontend-JS]({{< relref "/docs/frontend-js.md" >}})) or using libraries such as [hello.js](https://github.com/MrSwitch/hello.js) or [oidc-client](https://github.com/IdentityModel/oidc-client-js). You can also implement this mechanism yourself using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. How to implement this is out of scope of this page as it requires some advanced technics but basically that's how it works:
 
-- When user clicks on **Login with SimpleLogin**, you open a new window using the [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method. You can use the current page as target but usually people use an empty page, let's say `redirect.html` to speed up the load time:
+- When user clicks on **Sign in with SimpleLogin**, you open a new window using the [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method. You can use the current page as target but usually people use an empty page, let's say `redirect.html` to speed up the load time:
 
 ```js
 const authWindow = window.open(

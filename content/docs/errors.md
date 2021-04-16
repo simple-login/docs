@@ -15,7 +15,7 @@ https://app.simplelogin.io/oauth2/authorize
         &state=STATE
 ```
 
-- `http_not_allowed`: by default, `http[s]://localhost:*` is whitelisted to facilitate development. However once the *Login with SimpleLogin* code hits the production, a correct `redirect_uri` needs to be set on developer page (cf [App]({{< relref "/docs/app.md" >}})). For security reason, `http` is not allowed so you must use `https` for the web. For mobile apps, a custom scheme (e.g. `com.my_company.my_app://`) is also allowed.
+- `http_not_allowed`: by default, `http[s]://localhost:*` is whitelisted to facilitate development. However once the *Sign in with SimpleLogin* code hits the production, a correct `redirect_uri` needs to be set on developer page (cf [App]({{< relref "/docs/app.md" >}})). For security reason, `http` is not allowed so you must use `https` for the web. For mobile apps, a custom scheme (e.g. `com.my_company.my_app://`) is also allowed.
 
 - `unknown_redirect_uri`: the `redirect_uri`, if other than `http[s]://localhost:*` needs to be set on developer page. Please see [App]({{< relref "/docs/app.md" >}}).
 

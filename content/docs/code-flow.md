@@ -27,7 +27,7 @@ Let's jump into each endpoint.
 
 ## Login endpoint
 
-This endpoint handles user clicking on **Login with SimpleLogin** button (e.g. `<a href="https://your-app/login">Login with SimpleLogin</a>`) and redirects user to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
+This endpoint handles user clicking on **Sign in with SimpleLogin** button (e.g. `<a href="https://your-app/login">Sign in with SimpleLogin</a>`) and redirects user to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
 
 ```text
 https://app.simplelogin.io/oauth2/authorize

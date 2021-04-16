@@ -6,7 +6,7 @@ We recommend using [SimpleLogin JS SDK](https://github.com/simple-login/sdk.js),
 
 For the web, there are 2 ways to use SimpleLogin in terms of user experience:
 
-- With popup: when clicking on **Login with SimpleLogin** a new window popup is opened and closed once user approves.
+- With popup: when clicking on **Sign in with SimpleLogin** a new window popup is opened and closed once user approves.
 
 {{< figure src="/images/popup.png" caption="With Popup" >}}
 
@@ -100,7 +100,7 @@ function endSignin() {
 }
 ```
 
-Now if you run the a local web server (using `python3 -m http.server` for example), you should be able to login with SimpleLogin when you open http://localhost:8000
+Now if you run the a local web server (using `python3 -m http.server` for example), you should be able to sign in with SimpleLogin when you open http://localhost:8000
 
 
 
