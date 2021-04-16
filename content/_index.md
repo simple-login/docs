@@ -4,25 +4,28 @@ type: docs
 url: "/"
 ---
 
-# SimpleLogin Docs
+SIWSL (Sign in with SimpleLogin) Docs
+---
 
-Welcome to SimpleLogin, the most developer-friendly social login solution!
+Welcome to SIWSL, a [open-source](https://github.com/simple-login/app), privacy-focused login service 🎉!
 
-Built by developers who are frustrated with the confusing and unnecessarily complicated experiences provided by giants like Google, Facebook, Twitter, etc , SimpleLogin strikes to have the best experiences for developers. And of course, protect user privacy at the same time. For more information, please consult our website at https://simplelogin.io
+SimpleLogin created for privacy-conscious developers like you. Your users have total control over what information they want to share when they sign up for your website with SimpleLogin 👇
 
-Here you'll find handy documentation about how to add the **Login with SimpleLogin** button to your app or website using either SimpleLogin SDKs or third-party libraries.
+![](/images/siwsl.jpeg)
 
-If you think there is something missing, please <a href="mailto:hi@simplelogin.io">let us know!</a>
+Instead of the confusing and over-complex experiences of **Login with Google/Facebook** docs, SimpleLogin docs is simple and meant to facilitate your life.
 
 ## Quick Start
 
-Let's start by a quick example using SimpleLogin SDK.
+The easiest way to try out SIWSL is via SimpleLogin SDK.
 
-a. Create a `index.html` file that has a **Login with SimpleLogin** button
+### Step 1: Create a `index.html` file 
+
+that has a **Sign in with SimpleLogin** button
 
 ```html
 <button id="btn-simplelogin">
-    Login with SimpleLogin
+    Sign in with SimpleLogin
 </button>
 
 <div id="user-info"></div>
@@ -50,7 +53,9 @@ document.getElementById("btn-simplelogin").onclick = function(e) {
 </script>
 ```
 
-b. Run a local server, you can use any static server, for example Python `http.server` module:
+### Step 2: Run a local web server
+
+You can use any static server, for example Python `http.server` module:
 
 > python3 -m http.server
 
@@ -58,15 +63,19 @@ or NodeJS `http-server` module
 
 > npx http-server -p 8000
 
-c. Visit http://localhost:8000, you should now be able to login via SimpleLogin!
+Now you should now be able to sign in with SimpleLogin on http://localhost:8000 🎉
+
+---
 
 ## User Info
 
-Using SimpleLogin you will get the following user information:
+SIWSL allows you to obtain the following informations from a person:
 
-- `email`: either user's personal email address or an email **alias** user creates on SimpleLogin. All emails sent to an alias will be forwarded to user personal email so you can safely use this email to send important information to users. And please make sure to not send too much emails (aka spam) to users 😉.
-- `name`: usually has the format `first last` but this is not guaranteed ([some countries do not have surname](https://www.quora.com/Which-countrys-people-dont-have-a-surname)).
-- `avatar_url` (optional): only if user has uploaded their profile picture. Please note that this url is only **temporary** and will be expired in 1 week. We recommend downloading and storing the avatar. You can also just ask user to re-login in less than a week.
+- `email`: either their personal email address or an email alias.
+
+- `name`: their name.
+
+- `avatar_url` (optional): only if this person has decided to share their profile picture. This url is **expired** in 1 week.
 
 The next section quickly introduces OAuth2 and what `flow` should be used. If you already have strong understanding on `OAuth2`, please head directly to [App]({{< relref "/docs/app.md" >}})
 
@@ -74,7 +83,7 @@ The next section quickly introduces OAuth2 and what `flow` should be used. If yo
 
 From the user point of view, the login experience is consisted of 2 steps:
 
-1. User clicks on **Login with SimpleLogin** button, gets redirected to SimpleLogin authorization page. User will be asked if they want to share their information with your app/website.
+1. User clicks on **Sign in with SimpleLogin** button, gets redirected to SimpleLogin authorization page. User will be asked if they want to share their information with your app/website.
 
 2. User accepts, gets redirected back to your application and are authenticated.
 
@@ -84,7 +93,7 @@ From the user point of view, the login experience is consisted of 2 steps:
 
 From your app's point of view, the flow is the following:
 
-1. User clicks on **Login with SimpleLogin**, you app generates a redirection url to SimpleLogin that contains information about your website/app, e.g. `https://app.simplelogin.io/oauth2/authorize?client_id={AppID}&redirect_uri={your_callback_url}`
+1. User clicks on **Sign in with SimpleLogin**, you app generates a redirection url to SimpleLogin that contains information about your website/app, e.g. `https://app.simplelogin.io/oauth2/authorize?client_id={AppID}&redirect_uri={your_callback_url}`
 where `{AppID}` is your SimpleLogin AppId and `{your_callback_url}` is the url that user will be redirected back in the next step.
 
 2. User approves sharing data with your app, gets redirected back with `{your_callback_url}` along with a special `grant` that allows you to get user information. At this point there are 2 possibilities:
