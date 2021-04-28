@@ -1,6 +1,6 @@
 # Possible error codes
 
-When some errors happen during the authorization flow, SimpleLogin redirects user back to `redirect_uri?error={error_code}` so your app can act accordingly. Some errors are often caught during development but some can come from the user. Please find below the complete list of errors:
+When errors happen during the authorization flow, SimpleLogin redirects users back to `redirect_uri?error={error_code}` so that your app can act accordingly. Some errors are often caught during development but others can be user errors. Here is a complete list of errors:
 
 - `deny`: probably the most frequent error. This happens when user denies sharing their info with your app. You can maybe in this case offer another sign-in mechanism to user, or if SimpleLogin is the only one, let user know that they need to accept sharing their data in order to use your app.
 

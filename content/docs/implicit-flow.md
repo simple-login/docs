@@ -1,6 +1,6 @@
 # Implicit Flow - the raw way
 
-If you don't use (or don't want to use a library that supports OAuth/OpenID Connect), it's OK! The protocol is actually quite simple as you will see shortly below.
+If you don't use (or don't want to use a library that supports OAuth/OpenID Connect), it's OK! The protocol is actually quite simple as you will see below.
 
 This section will explain how to implement the `Implicit Flow` in your front-end using Vanilla JS.
 
@@ -18,7 +18,7 @@ Let's jump into each part.
 
 ## Login part
 
-This part handles user clicking on **Sign in with SimpleLogin** button (e.g. `<button>Login with SimpleLogin</button>`) and redirects user to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
+This part handles users clicking on **Sign in with SimpleLogin** button (e.g. `<button>Login with SimpleLogin</button>`) and redirects them to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
 
 ```text
 https://app.simplelogin.io/oauth2/authorize
@@ -50,8 +50,8 @@ REDIRECT_URI
 
 Let's break the components down:
 
-- `REDIRECT_URI` the same `REDIRECT_URI` in the previous step
-- `STATE`: the state generated in the previous step. It's your app's responsibility to compare this `STATE` to the one generated in previous step, typically by retrieving it from the `sessionStorage`.
+- `REDIRECT_URI`: the same `REDIRECT_URI` in the previous step
+- `STATE`: the state generated in the previous step. It's your app's responsibility to compare this `STATE` to the one generated in the previous step, typically by retrieving it from the `sessionStorage`.
 - `ACCESS_TOKEN`: used to get user info in a POST request to SimpleLogin. You might also notice that `#` is used instead of `?`; this is to avoid the `access token` hitting your back-end (if there's any) in the `implicit flow`.
 
 Here's the code snippet using `fetch` to get user info with the obtained `access token`:
@@ -89,7 +89,7 @@ Congratulations, you just implemented the OAuth Implicit Flow!
 
 ## Code example
 
-Please find below a full code example for this section. Please make sure to replace `YOUR_APP_ID` by your SimpleLogin AppID and serve the code on port 8000 (or just replace `http://localhost:8000` by your local url). This can be done by saving this code into a `index.html` file and serve the file with Python `http` module:
+You can find below a full code example for this section. Make sure to replace `YOUR_APP_ID` by your SimpleLogin AppID and serve the code on port 8000 (or just replace `http://localhost:8000` by your local url). This can be done by saving this code into a `index.html` file and serve the file with Python `http` module:
 
 > python3 -m http.server
 
@@ -159,11 +159,11 @@ or by NodeJS `static-server` tool, can be installed via `npm -g install static-s
 
 ## Popup or not popup
 
-You might notice that when clicking on **Login with Facebook/Google** button, a new (small) window is opened instead of user leaving your app. This has the advantage of user still staying on your app and therefore you don't need to worry about saving user data before redirecting them to another page.
+You might notice that when clicking on the **Login with Facebook/Google** button, a new (small) window is opened instead of the user leaving your app. This has the advantage of the user still staying on your app and therefore you don't need to worry about saving user data before redirecting them to another page.
 
-This can be done quite easily using SimpleLogin SDK JS (see [Frontend-JS]({{< relref "/docs/frontend-js.md" >}})) or using libraries such as [hello.js](https://github.com/MrSwitch/hello.js) or [oidc-client](https://github.com/IdentityModel/oidc-client-js). You can also implement this mechanism yourself using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. How to implement this is out of scope of this page as it requires some advanced technics but basically that's how it works:
+This can be done quite easily using SimpleLogin SDK JS (see [Frontend-JS]({{< relref "/docs/frontend-js.md" >}})) or using libraries such as [hello.js](https://github.com/MrSwitch/hello.js) or [oidc-client](https://github.com/IdentityModel/oidc-client-js). You can also implement this mechanism yourself using the [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method. How to implement this is out of the scope of this page as it requires some advanced technics but basically that's how it works:
 
-- When user clicks on **Sign in with SimpleLogin**, you open a new window using the [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method. You can use the current page as target but usually people use an empty page, let's say `redirect.html` to speed up the load time:
+- When the user clicks on **Sign in with SimpleLogin**, you open a new window using the [window.open](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) method. You can use the current page as the target but usually people use an empty page, let's say `redirect.html` to speed up the load time:
 
 ```js
 const authWindow = window.open(
