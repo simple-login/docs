@@ -2,17 +2,17 @@
 
 For Frontend JS (as opposed to Backend Node.js) you can use the **Implicit Flow** to log user in.
 
-We recommend using [SimpleLogin JS SDK](https://github.com/simple-login/sdk.js), which is actually a thin layer over [hello.js](https://github.com/MrSwitch/hello.js). For this reason, you can also use `hello.js` if you app already uses this library.
+We recommend using [SimpleLogin JS SDK](https://github.com/simple-login/sdk.js), which is actually a thin layer over [hello.js](https://github.com/MrSwitch/hello.js). For this reason, you can also use `hello.js` if your app already uses this library.
 
 For the web, there are 2 ways to use SimpleLogin in terms of user experience:
 
-- With popup: when clicking on **Sign in with SimpleLogin** a new window popup is opened and closed once user approves.
+- With popup: when clicking on **Sign in with SimpleLogin**, a new window popup is opened and it is closed once the user signs in.
 
 {{< figure src="/images/popup.png" caption="With Popup" >}}
 
 - Without popup: in the same window/tab user is redirected to SimpleLogin authorization page and returns back to your app once they approves.
 
-We recommend the **with popup** way so you don't have to deal with state saving when browser reloads in **without popup**.
+We recommend the **with popup** way so you don't have to deal with state saving when the browser reloads in **without popup**.
 
 By default, the **SimpleLogin JS SDK** uses the **with popup** way.
 
@@ -35,7 +35,7 @@ In your `js`, you need to init the SDK with your SimpleLogin AppID:
 SL.init("{your SimpleLogin AppID}");
 ```
 
-To open the login popup, use `SL.login()` which takes a callback as parameter: the callback will receive user info when they approves on SimpleLogin authorization page.
+To open the login popup, use `SL.login()` which takes a callback as parameter: the callback will receive user info when they sign in on the SimpleLogin authorization page.
 
 ```js
 SL.login(function(user) {
@@ -43,7 +43,7 @@ SL.login(function(user) {
 })
 ```
 
-The `SL.login` is typically called inside a function onclick:
+The `SL.login` is typically called inside an onclick function:
 
 ```js
 document.getElementById("btn-simplelogin").onclick = function(e) {

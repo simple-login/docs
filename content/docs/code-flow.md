@@ -1,10 +1,10 @@
 # Code Flow - the raw way
 
-If you don't use (or don't want to use a library that supports OAuth/OpenID Connect), you totally can! The protocol is actually quite simple from the app's point of view. (the spec is hundreds pages for provider though ...)
+If you don't use (or don't want to use a library that supports OAuth/OpenID Connect), you totally can! The protocol is actually quite simple from the app's point of view. (the spec is hundreds of pages for provider though ...)
 
 This section will explain how to implement the `Code Flow` in your back-end along with some info to watch out for.
 
-To implement the `Code Flow` please make sure you have:
+To implement the `Code Flow` please make sure that you have:
 
 - read through the [Introduction]({{< relref "/" >}}) to have a rough idea on what is the `Code Flow` and
 - followed the [App]({{< relref "/docs/app.md" >}}) to have the SimpleLogin AppId and AppSecret.
@@ -27,7 +27,7 @@ Let's jump into each endpoint.
 
 ## Login endpoint
 
-This endpoint handles user clicking on **Sign in with SimpleLogin** button (e.g. `<a href="https://your-app/login">Sign in with SimpleLogin</a>`) and redirects user to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
+This endpoint handles user clicking on **Sign in with SimpleLogin** button (e.g. `<a href="https://your-app/login">Sign in with SimpleLogin</a>`) and redirects them to a **formatted** SimpleLogin url. This url has the following format. Line breaks are added for visibility, please remove them in your code.
 
 ```text
 https://app.simplelogin.io/oauth2/authorize
@@ -96,6 +96,6 @@ SimpleLogin will return this response if everything is correct:
 
 With this user info, you should now either be logged in or have access to some reserved information.
 
-Congratulations, you just implemented a OAuth client!
+Congratulations, you just implemented an OAuth client!
 
 
