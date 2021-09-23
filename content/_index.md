@@ -4,7 +4,7 @@ type: docs
 url: "/"
 ---
 
-SIWSL (Sign in with SimpleLogin) Docs
+# SIWSL (Sign in with SimpleLogin) Documentation
 ---
 
 Welcome to SIWSL, a [open-source](https://github.com/simple-login/app), privacy-focused login service 🎉!
@@ -19,7 +19,7 @@ Instead of the confusing and over-complex experiences of **Login with Google/Fac
 
 The easiest way to try out SIWSL is via SimpleLogin SDK.
 
-### Step 1: Create a `index.html` file 
+### Step 1: Create a `index.html` file
 
 that has a **Sign in with SimpleLogin** button
 

@@ -1,7 +1,7 @@
-Add SIWSL (Sign in with SimpleLogin) to Discourse
+# Add SIWSL (Sign in with SimpleLogin) to Discourse
 ---
 
-[Discourse](https://www.discourse.org) is a popular open-source forum software. 
+[Discourse](https://www.discourse.org) is a popular open-source forum software.
 
 After adding SIWSL to Discourse, a person can choose to use their SimpleLogin account to log in or sign up on your forum 👇
 
@@ -19,7 +19,7 @@ First, let's install the official OpenID Connect Authentication plugin by adding
 
 ```
 sudo -E -u discourse git clone https://github.com/discourse/discourse-openid-connect.git
-``` 
+```
 
 into your container’s `app.yml` file (usually present in `/var/discourse/containers/`). More info on how to install a plugin on [How to Install Plugins in Discourse](https://meta.discourse.org/t/install-plugins-in-discourse/19157)
 
@@ -69,7 +69,7 @@ Go to the Discourse admin page for Discourse OpenID Connect Authentication Plugi
 
 ![](/images/discourse-go-to-openid-setting.png)
 
-then make sure to 
+then make sure to
 
 - enable OpenID Connect
 - copy https://app.simplelogin.io/.well-known/openid-configuration in **openid connect discovery document**
