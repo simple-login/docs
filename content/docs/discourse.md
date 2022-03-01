@@ -40,7 +40,7 @@ cd /var/discourse
 ./launcher rebuild app
 ```
 
-The plugin should be now available on the Discourse Admin/Plugins page
+The plugin should now be available on the Discourse Admin/Plugins page
 
 ![](/images/discourse-admin.png)
 
@@ -54,7 +54,7 @@ Head to [SimpleLogin dashboard](https://app.simplelogin.io/developer/) and creat
 
 Now go to the **OAuth2 endpoints** page:
 
-- Note the **Client ID** and **Client Secret** needed for the next step.
+- Note that the **Client ID** and **Client Secret** are needed for the next step.
 
 - Add `{your forum url}/auth/oidc/callback` as **redirect_uri**, make sure to replace `{your forum url}` by your actual forum URL.
 

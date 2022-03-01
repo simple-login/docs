@@ -6,13 +6,13 @@ For SimpleLogin, you can use either [OAuth strategy](https://github.com/jaredhan
 
 ## Preparation
 
-First please install `passport`, `passport-openidconnect`, `express-session` (passport uses session to store its data)
+First, install `passport`, `passport-openidconnect`, `express-session` (passport uses session to store its data)
 
 ```bash
 npm install passport passport-openidconnect express-session --save
 ```
 
-Then please store your SimpleLogin **AppID** and **AppSecret** somewhere, preferably in `env` variable as recommended in the [The Twelve Factors](https://12factor.net).
+Then store your SimpleLogin **AppID** and **AppSecret** somewhere, preferably in `env` variable as recommended in the [The Twelve Factors](https://12factor.net).
 
 ```bash
 export CLIENT_ID={your_app_id}
@@ -76,7 +76,7 @@ passport.use('SimpleLogin', new OidcStrategy({
 
 ## Login endpoint
 
-When user clicks on **Sign in with SimpleLogin**, user gets redirected to the SimpleLogin authorization page. This is done using the `/login` endpoint. The nice thing about passport and its OpenID Connect strategy is it also takes care of generating a random `state` in the redirection URL. The `state` is necessary to defend against [CSRF attack](https://www.shellvoide.com/hacks/cross-site-request-forgery-attack-on-oauth2-protocol/).
+When the user clicks on **Sign in with SimpleLogin**, they get redirected to the SimpleLogin authorization page. This is done using the `/login` endpoint. The nice thing about passport and its OpenID Connect strategy is that it also takes care of generating a random `state` in the redirection URL. The `state` is necessary to defend against [CSRF attack](https://www.shellvoide.com/hacks/cross-site-request-forgery-attack-on-oauth2-protocol/).
 
 ```js
 // redirect user to authorization page
